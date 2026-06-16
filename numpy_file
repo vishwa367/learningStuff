@@ -1,0 +1,31 @@
+#Different ways to create numpy array
+
+import numpy as np
+
+l1=[1,2,3,4,5]
+arr1= np.array(l1)
+print("Using List:",arr1,type(arr1))
+
+arr2= np.arange(0,10,2) # Not 10
+print("Using arange:",arr2,type(arr2))
+
+arr3= np.linspace(0,50,6,dtype=int)    # Start, Stop, No. of elements you need
+print("Using linspace:",arr3)
+
+arr4= np.zeros(5,int)
+print("Using zeros:", arr4)
+
+arr5= np.ones(5,int)
+print("Using ones:",arr5)
+
+arr6= np.full((2,3),7)  #Shape, Full_value
+print("Using full (all 7s):",arr6)
+
+arr7= np.eye(5, dtype=int)
+print("Using (identity) eye:",arr7)
+
+arr8= np.random.rand(5) #Uniform distribution between 0 and 1. Everytime value changes.
+print("Using rand:",arr8)
+
+arr9= np.random.randint(0,10,5) #Low High Size
+print("Using randint:",arr9)
